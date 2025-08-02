@@ -1,0 +1,121 @@
+.introduction-text {
+  margin-top: 5rem;
+  color: var(--primarycolor);
+  text-align: center;
+  font-size: 5rem;
+  filter: saturate(50deg);
+  opacity: 0;
+  animation-name: intro;
+  animation-timing-function: ease;
+  animation-delay: 1s;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+  animation-direction: normal;
+}
+
+@keyframes intro {
+  to {
+    opacity: 1;
+  }
+}
+
+.introductionparagraph {
+  justify-self: center;
+  text-align: center;
+  font-size: 1.5rem;
+  color: var(--primarycolor);
+  max-width: 40ch;
+  opacity: 0;
+  animation-name: introparagraph;
+  animation-duration: 2.5s;
+  animation-delay: 3s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease;
+}
+
+@keyframes introparagraph {
+  to {
+    opacity: 1;
+  }
+}
+
+.services-div {
+  background-color: orangered;
+  padding: 2rem;
+  margin-top: 5rem;
+  display: flex;
+  justify-content: space-evenly;
+  gap: 5rem;
+  font-size: 30px;
+  border-radius: 10px;
+}
+
+.services-image {
+  height: 500px;
+  border-radius: 1rem;
+}
+.skills-section {
+  background-image: url("../assets/image.jpg");
+  border-radius: 10px;
+}
+.skills-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: orangered;
+  padding: 5rem;
+  //   margin-top: 1rem;
+  ul {
+    list-style-type: none;
+    line-height: 40px;
+  }
+  h2:hover {
+    color: orangered;
+    transform: rotateX(360deg);
+    transition: 0.8s ease;
+    text-decoration: underline orangered;
+  }
+}
+.skills-h2 {
+  color: white;
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  cursor: pointer;
+  font-size: 1.5rem;
+}
+
+.skills-display {
+  border: 2px solid orangered;
+  width: 22rem;
+  aspect-ratio: 1/1;
+  border-radius: 10px;
+  background-image: url("../assets/robot\ sitting.jpg");
+  background-color: rgba(245, 245, 245, 0.401);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-blend-mode: overlay;
+  color: black;
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+@media (max-width: 1200px) {
+  .services-div {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+  }
+  .service-image {
+    display: none;
+  }
+}
+// @media (max-width: 1700px) {
+//   .service-image {
+//     width: 20px;
+//   }
+// }

@@ -1,0 +1,28 @@
+.footer {
+  background-color: orangered;
+  display: flex;
+  flex-direction: row;
+  padding: 2rem;
+  justify-content: space-around;
+  gap: 1rem;
+}
+.footer ul {
+  list-style-type: none;
+  text-decoration: none;
+  line-height: 25px;
+}
+.footer a {
+  text-decoration: none;
+  color: black;
+  transition: 0.7s ease;
+}
+.footer a:hover {
+  display: block;
+  transform: scaleX(1.1);
+  color: white;
+}
+
+.footercontact {
+  display: flex;
+  flex-direction: column;
+}/*# sourceMappingURL=footer.css.map */

@@ -1,0 +1,23 @@
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  text-decoration: none;
+  padding: 15px;
+  border: 1px solid black;
+  background-color: orangered;
+}
+.header a {
+  text-decoration: none;
+  color: black;
+}
+.header a:hover {
+  color: white;
+  transform: scaleX(1.11);
+  transition: 0.7s;
+}
+
+.headera {
+  display: flex;
+  gap: 1rem;
+}/*# sourceMappingURL=header.css.map */
